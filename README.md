@@ -24,6 +24,8 @@ O DSCommerce é uma aplicação backend que implementa um sistema de e-commerce 
 ✅ Seed de dados com import.sql
 
 🗂️ Modelo de Domínio
+
+
 text
 ┌─────────────┐      ┌─────────────┐      ┌─────────────┐
 │    User     │1    N│    Order    │1    1│   Payment   │
@@ -54,6 +56,8 @@ text
                                         │ id        │
                                         │ name      │
                                         └───────────┘
+
+
 🔗 Relacionamentos Implementados
 📌 Muitos-para-Um (Many-to-One)
 java
