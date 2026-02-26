@@ -1,7 +1,6 @@
 package com.devsuperior.dscommercem.entities;
 
 import jakarta.persistence.*;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,6 +25,9 @@ public class Product {
             inverseJoinColumns = @JoinColumn(name = "category_id"))
 
     private Set<Category> categories = new HashSet<>();
+
+   @OneToMany(mappedBy = "id.product")
+    private Set<OrderItem> items = new HashSet<>();
 
     public Product(){
             }
